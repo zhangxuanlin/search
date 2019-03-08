@@ -42,6 +42,7 @@ module.exports = {
         ],
         "react/button-has-type": 0,
         "react/forbid-prop-types": 0,
+        "jsx-a11y/anchor-is-valid": 0,
         "jsx-a11y/click-events-have-key-events": 0,
         "jsx-a11y/label-has-associated-control": 0,
         "jsx-a11y/media-has-caption": [0, {
