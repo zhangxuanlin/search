@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+ul, li, ol, p {
+    margin: 0;
+    padding: 0;
+}
+input {
+    border: 0;
+    outline: 0;
+}
+button {
+    border: none;
+    outline: none;
+    color: #efefef;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track  {
+    background: #dadada;
+}
+::-webkit-scrollbar-thumb{
+    background: #afafaf;
+    cursor: pointer;
+}
+.layout {
+    height: 100%;
+    .logo {
+        height: 32px;
+        background: rgba(255,255,255,.2);
+        margin: 16px;
+    }
+    .trigger {
+        font-size: 18px;
+        line-height: 64px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color .3s;
+    }
+    .trigger:hover {
+        color: #1890ff;
+    }
+    .Content {
+        margin: 24px 16px;
+        position: relative;
+        .Main {
+            padding: 10px;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    :global(.ant-menu-item) a, :global(.ant-menu-item-selected) a {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-left: 50px;
+        text-decoration: none;
+    }
+    :global(.ant-menu-item) a {
+        color: #1890ff;
+    }
+    :global(.ant-menu-item-selected) a {
+        color: #fff;
+    }
+}
